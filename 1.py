@@ -14,11 +14,6 @@ def maxiao(f,a,b,N=20,I=0.0):
     I *= dx
     return I
 
-   # return I,i+1
-
-#def mx01(x):
- #return 3.0*x-2.0
-
 def mx02(x):
     return np.sin(x*1)
  
