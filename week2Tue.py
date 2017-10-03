@@ -16,11 +16,11 @@ def solveByBisect(f,a,b,nmax=100,e=1e-6):
             b = c
         else:
             a = c
-#        if abs(f(c)) < abs(e):
-#            break    #Break out of the for loop
-#    else:            #If you haven't broken out of the for loop by the end,
+        if abs(f(c)) < abs(e):
+            break    #Break out of the for loop
+    else:            #If you haven't broken out of the for loop by the end,
                      #raise an exception
-#        raise Exception("No root found by solveByBisect")
+            raise Exception("No root found by solveByBisect")
     if nmax <= 0:
         raise ValueError('Argument nmax to solveByBisect should be >0')
     if e <= 0:
@@ -36,7 +36,7 @@ import numpy as np
 assert abs(np.cos(solveByBisect(np.cos,0,np.pi)[0])) < 1e-6, \
        "solveByBisect gave the wrong answer for cos"
 def mx01(x):
-    return 2*x+3
+    return 2.*x+3.
     
 solution = solveByBisect(mx01,-10.,10.)[0]
 print(solution)
