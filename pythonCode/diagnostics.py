@@ -1,4 +1,4 @@
-# Various function for plotting results and for calculating error measures
+ # Various function for plotting results and for calculating error measures
 
 ### Copy out most of this code. Code commented with 3#s (like this) ###
 ### is here to help you to learn python and need not be copied      ###
