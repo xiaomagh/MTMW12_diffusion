@@ -10,6 +10,7 @@ from __future__ import absolute_import, division, print_function
 
 ### The numpy package for numerical functions and pi                ###
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Import the special package for the erf function
 from scipy import special
@@ -35,6 +36,8 @@ def L2ErrorNorm(phi, phiExact):
     # calculate the error and the error norms
     phiError = phi - phiExact
     L2 = np.sqrt(sum(phiError**2)/sum(phiExact**2))
-
-    return L2
+    
+    print (phiError)
+    
+    return L2,phiError
 
